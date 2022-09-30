@@ -4,9 +4,12 @@ const { Product, Category, Tag, ProductTag } = require('../../models');
 // The `/api/products` endpoint
 
 // get all products
-router.get('/', (req, res) => {
+router.get('/', async (req, res) => {
   // find all products
   // be sure to include its associated Category and Tag data
+  // try {
+  //   const productData = await Product.findAll()
+  // }
 });
 
 // get one product
@@ -15,7 +18,7 @@ router.get('/:id', (req, res) => {
   // be sure to include its associated Category and Tag data
 });
 
-// create new product
+// create new product *** TODO: Do I need to do anything here?
 router.post('/', (req, res) => {
   /* req.body should look like this...
     {
