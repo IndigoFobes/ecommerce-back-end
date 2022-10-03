@@ -12,7 +12,7 @@ router.get('/', async (req, res) => {
     });
     res.status(200).json(categoryData);
   } catch (err) {
-    res.status(400).json(err); // ***TODO: check if this is the right error
+    res.status(500).json(err); // ***TODO: check if this is the right error
   }
 
 });
@@ -30,7 +30,7 @@ router.get('/:id', async (req, res) => {
     }
     res.status(200).json(categoryData);
   } catch (err) {
-    res.status(400).json(err);
+    res.status(500).json(err);
   }
 
 });
@@ -41,9 +41,9 @@ router.post('/', async (req, res) => {
     const categoryData = await Category.create({
       category_name: req.body.category_name,
     });
-    res.status(200).json(categoryData);
+    res.status(201).json(categoryData);
   } catch (err) {
-    res.status(404).json(err); // *** TODO: right error code? Just check all status codes honestly!
+    res.status(500).json(err); // *** TODO: right error code? Just check all status codes honestly!
   }
 });
 
@@ -66,7 +66,7 @@ router.put('/:id', async (req, res) => {
     }
     res.status(200).json(categoryData);
   } catch(err) {
-    res.status(404).json(err);
+    res.status(500).json(err);
   }
 });
 
@@ -86,7 +86,7 @@ router.delete('/:id', async (req, res) => {
     }
     res.status(200).json(categoryData);
   } catch(err) {
-    res.status(400).json(err);
+    res.status(500).json(err);
   }
 });
 
