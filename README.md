@@ -25,6 +25,10 @@
 
   Navigate into your mysql shell and enter your password. Run 'source schema.sql' and then quit. Run npm run seed in your command line, and then run npm start to start your server. 
 
+
+https://user-images.githubusercontent.com/105685042/194129725-ef8d16fd-ea8b-4c96-849d-fbaca639319d.mp4
+
+
   <a name="license"></a>
   ## License
 
