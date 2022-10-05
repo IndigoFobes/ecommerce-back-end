@@ -5,7 +5,7 @@
 
   ## Description
 
-  This application runs in node.js and creates/stores databses using MySql2. 
+  This application runs in Node.js and creates/stores databases using MySQL2. Express.js, dotenv, and sequelize were also used in order to create the server and connect it with the database. The purpose of the Ecommerce Back End is to provide the ability to create, update, read, and delete items within an e-commerce site's database. The api routes created are to be used by the client looking to change database information.
 
   ## Table of Contents
 
@@ -23,7 +23,7 @@
   <a name="usage"></a>
   ## Usage
 
-  Navigate into your mysql shell and enter your password. Run 'source schema.sql' and then quit. Run npm run seed in your command line, and then run npm start to start your server. 
+  First, make sure to edit the env.EXAMPLE file to contain your mysql user information. And change the file to .env. Next, navigate into your mysql shell and enter your password. Run 'source schema.sql' and then quit. Run 'npm run seed' in your command line, and then run 'npm start' to start your server. 
 
 
 https://user-images.githubusercontent.com/105685042/194129725-ef8d16fd-ea8b-4c96-849d-fbaca639319d.mp4
@@ -32,7 +32,7 @@ https://user-images.githubusercontent.com/105685042/194129725-ef8d16fd-ea8b-4c96
   <a name="license"></a>
   ## License
 
-  This application is licenced under Unlicense
+  This application is licenced under Unlicense.
   
 
   <a name="tests"></a>
