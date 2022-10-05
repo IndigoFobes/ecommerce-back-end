@@ -25,6 +25,8 @@
 
   First, make sure to edit the env.EXAMPLE file to contain your mysql user information. And change the file to .env. Next, navigate into your mysql shell and enter your password. Run 'source schema.sql' and then quit. Run 'npm run seed' in your command line, and then run 'npm start' to start your server. 
 
+  Should you like to test API routes, go to Insomnia, or your preferred testing framework.
+
 
 https://user-images.githubusercontent.com/105685042/194129725-ef8d16fd-ea8b-4c96-849d-fbaca639319d.mp4
 
